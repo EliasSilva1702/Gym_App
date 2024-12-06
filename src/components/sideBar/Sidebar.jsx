@@ -64,6 +64,8 @@ export const Sidebar = () => {
           </SheetDescription>
         </SheetHeader>
 
+
+
         {/* Menú de navegación */}
         <ul className="flex flex-col gap-4 mt-6 text-lg text-gray-700">
           {menuItems.map((item) => (
