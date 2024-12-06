@@ -49,6 +49,11 @@ export const Sidebar = () => {
       path: "/contacto",
       icon: <PhoneCall className="w-6 h-6 mr-2" />,
     },
+    {
+      name: "Administrador",
+      path: "/Administrador",
+      icon: <PhoneCall className="w-6 h-6 mr-2" />,
+    },
   ];
 
   return (
