@@ -20,7 +20,7 @@ export const Header = () => {
     <header className="bg-green-500 p-8">
       <div className="flex items-center justify-between">
         <h1 className="text-xl md:text-3xl font-bold">Perfil Gym</h1>
-        
+
         {/* Menú de navegación */}
         <ul className="hidden lg:flex gap-12 text-white/90 items-center mx-auto md:text-xl">
           {menuItems.map((item) => (
@@ -36,11 +36,10 @@ export const Header = () => {
             </li>
           ))}
         </ul>
-      </div>
-
-      {/* Sidebar para pantallas pequeñas */}
-      <div className="lg:hidden block">
-        <Sidebar />
+        {/* Sidebar para pantallas pequeñas */}
+        <div className="lg:hidden block">
+          <Sidebar />
+        </div>
       </div>
     </header>
   );
