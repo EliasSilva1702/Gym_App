@@ -35,7 +35,7 @@ export const Header = () => {
               </Link>
             </li>
           ))}
-        </ul> AGUSSSSS LINDOOOO
+        </ul> ELIAS PUTOOO
         {/* Sidebar para pantallas pequeñas */}
         <div className="lg:hidden block">
           <Sidebar />
