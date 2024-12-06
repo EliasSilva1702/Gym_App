@@ -19,7 +19,7 @@ export const Header = () => {
   return (
     <header className="bg-green-500 p-8">
       <div className="flex items-center justify-between">
-        <h1 className="text-xl md:text-3xl font-bold">Perfil Gym</h1>
+        <h1 className="text-2xl md:text-3xl font-bold mr-8">Perfil Gym</h1>
 
         {/* Menú de navegación */}
         <ul className="hidden lg:flex gap-12 text-white/90 items-center mx-auto md:text-xl">
@@ -35,10 +35,10 @@ export const Header = () => {
               </Link>
             </li>
           ))}
-        </ul> ELIAS PUTOOO
+        </ul>
         {/* Sidebar para pantallas pequeñas */}
         <div className="lg:hidden block">
-          <Sidebar />
+          <Sidebar path={path} location={location} />
         </div>
       </div>
     </header>
