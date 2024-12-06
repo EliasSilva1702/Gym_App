@@ -1,3 +1,4 @@
+import { MapPin, Phone, Star } from "lucide-react";
 import React from "react";
 
 export const Facilities = () => {
@@ -8,6 +9,7 @@ export const Facilities = () => {
       direction: "21 de Septiembre 2884",
       city: "Montevideo",
       image: "/facilities-img/PuntaCarretas-perfilGym.jpg",
+      phone: "2711 48 36",
       rating: 4.5,
       price: 100,
       href: "#",
@@ -18,6 +20,7 @@ export const Facilities = () => {
       direction: "Pedragosa Sierra esq. Bvr. Artigas",
       city: "Parada 5, Punta del Este",
       image: "/facilities-img/PtaDelEste-perfilGym.jpg",
+      phone: "4249 12 82",
       rating: 4.5,
       price: 100,
       href: "#",
@@ -28,6 +31,7 @@ export const Facilities = () => {
       direction: "Maldonado 1779",
       city: "Montevideo",
       image: "/facilities-img/ParqueRodo-perfilGym.jpg",
+      phone: "092 513 192",
       rating: 4.5,
       price: 100,
       href: "#",
@@ -38,6 +42,7 @@ export const Facilities = () => {
       direction: "Club Trouville, Chucarro 1031",
       city: "Montevideo",
       image: "/facilities-img/Pocitos-perfilGym.jpeg",
+      phone: "2711 48 36",
       rating: 4.5,
       price: 100,
       href: "#",
@@ -48,6 +53,7 @@ export const Facilities = () => {
       direction: "Maldonado 1898 esq. Eduardo Acevedo",
       city: "Montevideo",
       image: "/facilities-img/Cordon-perfilGym.jpg",
+      phone: "2711 48 36",
       rating: 4.5,
       price: 100,
       href: "#",
@@ -58,6 +64,7 @@ export const Facilities = () => {
       direction: "Rivera y Bustamante",
       city: "Montevideo",
       image: "/facilities-img/NuevoPocitos-perfilGym.jpeg",
+      phone: "2711 48 36",
       rating: 4.5,
       price: 100,
       href: "#",
@@ -68,6 +75,7 @@ export const Facilities = () => {
       direction: "Avda. Gral. Alvear 3825, Bajada 12",
       city: "Ciudad de la Costa",
       image: "/facilities-img/CdeLaCosta-perfilGym.jpg",
+      phone: "2695 93 54",
       rating: 4.5,
       price: 100,
       href: "#",
@@ -78,6 +86,7 @@ export const Facilities = () => {
       direction: "Cannes 1799 esq. Avda. Italia",
       city: "Montevideo",
       image: "/facilities-img/Carrasco-perfilGym.jpg",
+      phone: "2711 48 36",
       rating: 4.5,
       price: 100,
       href: "#",
@@ -88,6 +97,7 @@ export const Facilities = () => {
       direction: "Blvr. Batlle y Ordóñez 1410 esq. Rivera",
       city: "Montevideo",
       image: "/facilities-img/Buceo-perfilGym.jpg",
+      phone: "2711 48 36",
       rating: 4.5,
       price: 100,
       href: "#",
@@ -108,12 +118,18 @@ export const Facilities = () => {
           <div className="mt-4 flex flex-col items-center justify-center">
             <h3 className="text-xl font-bold">{facility.name}</h3>
             <div className="flex flex-col items-center justify-center gap-4 mt-4 mb-2">
-            <p className="text-gray-700 text-sm">{facility.direction}</p>
-            <p className="text-gray-700 text-sm font-semibold">{facility.city}</p>
+              <p className="text-gray-700 text-sm">{facility.direction}</p>
+              <p className="text-gray-700 text-sm font-semibold flex ">
+                {facility.city} <MapPin className="w-6 h-5 ml-1" />
+              </p>
+              <p className="text-gray-700 text-sm font-semibold flex ">
+                {facility.phone} <Phone className="w-6 h-5 ml-1" />
+              </p>
             </div>
             <div className="flex items-center justify-center mt-4">
-              <span className="text-gray-700 text-sm">
-                {facility.rating} ⭐️
+              <span className="text-gray-700 text-sm flex">
+                {facility.rating}{" "}
+                <Star className="w-6 h-5 ml-1 text-yellow-500" />
               </span>
               <span className="text-gray-700 text-sm ml-2">
                 {facility.price}$
